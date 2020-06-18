@@ -11,7 +11,7 @@ const StyledPostHeader = styled.header(
         grid-area: 1 / 1 / -1 / -1;
 
         .page-links {
-          ${tw`pt-1 pr-4 text-xs font-thin`};
+          ${tw`flex pt-1 pr-4 text-xs font-thin`};
           line-height: 15px;
           letter-spacing: 0.01em;
           > span {
