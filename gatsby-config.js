@@ -1,12 +1,16 @@
 require('dotenv').config({ path: `.env` });
 
+/*
+ ** Your probably going to want to override and add your own settings in here, particularly the siteMetadata and the manifest settings **
+ */
+
 module.exports = {
   siteMetadata: {
     author: `Chris Williams`,
     title: `Gatsby Cactus Starter`,
     description: `An MDX Gatsby starter`,
     lang: `en-GB`,
-    siteUrl: `localhost:8000`,
+    siteUrl: `https://gatsby-cactus-starter.netlify.app/`,
     social: [
       {
         name: `GitHub`,
