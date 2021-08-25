@@ -1,7 +1,7 @@
 require('dotenv').config({ path: `.env` });
 
 /*
- ** Your probably going to want to override and add your own settings in here, particularly the siteMetadata and the manifest settings **
+ ** You're probably going to want to add your own settings in here, particularly the siteMetadata and the manifest settings **
  */
 
 module.exports = {
@@ -22,6 +22,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -84,12 +85,6 @@ module.exports = {
           require('autoprefixer'),
           require('cssnano'),
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
       },
     },
     {

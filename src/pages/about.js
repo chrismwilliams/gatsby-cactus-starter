@@ -1,16 +1,15 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import { FaGithub } from 'react-icons/fa';
 
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import { PageLayout } from '../components/ui';
 import StyledAbout from '../components/styled/about';
 
 export default function About({ data }) {
   return (
     <PageLayout>
-      <SEO title="About" description="Here's a little bit about myself" />
+      <Seo title="About" description="Here's a little bit about myself" />
       <StyledAbout>
         <h2>About Me</h2>
         <p>
@@ -24,7 +23,11 @@ export default function About({ data }) {
           </a>
           . I’m particularly great for a personal web page with a simple blog.
         </p>
-        <Img fluid={data.aboutImg.childImageSharp.fluid} />
+        <StaticImage
+          src="../images/cactus.png"
+          alt="Cactus with the Gatsby JS logo"
+          layout="fullWidth"
+        />
         <p>These are my best features</p>
         <ul>
           <li>I am fully responsive</li>
@@ -49,15 +52,3 @@ export default function About({ data }) {
     </PageLayout>
   );
 }
-
-export const query = graphql`
-  query {
-    aboutImg: file(name: { eq: "cactus" }) {
-      childImageSharp {
-        fluid(maxWidth: 280) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
