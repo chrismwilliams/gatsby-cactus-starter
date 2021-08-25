@@ -4,14 +4,14 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { FaTag } from 'react-icons/fa';
 
 import formatTime from '../../utils/format-time';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import { PostLayout } from '../components/ui';
 import StyledPost from '../components/styled/post';
 
 export default function Post({ data: { post, previous, next } }) {
   return (
     <PostLayout previous={previous} next={next} toc={post.tableOfContents}>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.excerpt}
       />

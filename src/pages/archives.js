@@ -2,14 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import 'twin.macro';
 
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import { PageLayout } from '../components/ui';
 import PostList from '../components/post-list';
 
 export default function Archives({ data: { allMdx } }) {
   return (
     <PageLayout>
-      <SEO
+      <Seo
         title="Archives"
         description="Collection of all my blogs in one place"
       />
