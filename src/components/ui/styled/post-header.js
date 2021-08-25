@@ -44,7 +44,7 @@ const StyledPostHeader = styled.header(
           [data-tooltip] {
             ${tw`hover:text-pink-400`};
             &::before {
-              ${tw`absolute top-0 right-0 z-50 invisible mr-16 italic text-right whitespace-no-wrap opacity-0 text-font`};
+              ${tw`absolute top-0 right-0 z-50 invisible mr-16 italic text-right opacity-0 whitespace-nowrap text-font`};
               content: attr(data-tooltip);
               transform: translateX(-50%) translateY(-2px);
               transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);

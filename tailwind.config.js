@@ -1,9 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
-  purge: {
-    enabled: false,
-  },
   theme: {
     extend: {
       colors: {
