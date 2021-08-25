@@ -1,4 +1,4 @@
-export default function (date) {
+export default function formatTime(date) {
   let d = new Date(date),
     month = '' + (d.getMonth() + 1),
     day = '' + d.getDate(),
